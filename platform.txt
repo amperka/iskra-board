@@ -1,4 +1,4 @@
 name=Amperka Iskra Boards
-version=0.0.1
+version=0.1.0
 
 recipe.output.tmp_file={build.project_name}.hex

@@ -1,25 +1,25 @@
 menu.version=Version
 
-iskra-nano-pb.name=Amperka Iskra Nano PB
-iskra-nano-pb.upload.tool=arduino:avrdude
-iskra-nano-pb.upload.protocol=arduino
-iskra-nano-pb.upload.mcu=atmega328pb
-iskra-nano-pb.upload.maximum_size=32256
-iskra-nano-pb.upload.maximum_data_size=2048
+iskra-nano-pro.name=Amperka Iskra Nano Pro
+iskra-nano-pro.upload.tool=arduino:avrdude
+iskra-nano-pro.upload.protocol=arduino
+iskra-nano-pro.upload.mcu=atmega328pb
+iskra-nano-pro.upload.maximum_size=32256
+iskra-nano-pro.upload.maximum_data_size=2048
 
-iskra-nano-pb.bootloader.tool=arduino:avrdude
-iskra-nano-pb.bootloader.low_fuses=0xFF
-iskra-nano-pb.bootloader.high_fuses=0xDE
-iskra-nano-pb.bootloader.unlock_bits=0xFF
-iskra-nano-pb.bootloader.lock_bits=0xCF
+iskra-nano-pro.bootloader.tool=arduino:avrdude
+iskra-nano-pro.bootloader.low_fuses=0xFF
+iskra-nano-pro.bootloader.high_fuses=0xDE
+iskra-nano-pro.bootloader.unlock_bits=0xFF
+iskra-nano-pro.bootloader.lock_bits=0xCF
 
-iskra-nano-pb.build.mcu=atmega328pb
-iskra-nano-pb.build.board=AVR_ISKRA_NANO_PB
-iskra-nano-pb.build.extra_flags=-include "{runtime.platform.path}/variants/iskra-nano-pb/io_328pb.h"
-iskra-nano-pb.build.core=arduino:arduino
-iskra-nano-pb.build.variant=iskra-nano-pb
+iskra-nano-pro.build.mcu=atmega328pb
+iskra-nano-pro.build.board=AVR_ISKRA_NANO_PRO
+iskra-nano-pro.build.extra_flags=-include "{runtime.platform.path}/variants/iskra-nano-pb/io_328pb.h"
+iskra-nano-pro.build.core=arduino:arduino
+iskra-nano-pro.build.variant=iskra-nano-pro
 
-iskra-nano-pb.upload.speed=115200
-iskra-nano-pb.bootloader.extended_fuses=0xF4
-iskra-nano-pb.bootloader.file=optiboot/optiboot_atmega328pb_16mhz.hex
-iskra-nano-pb.build.f_cpu=16000000L
+iskra-nano-pro.upload.speed=115200
+iskra-nano-pro.bootloader.extended_fuses=0xF4
+iskra-nano-pro.bootloader.file=optiboot/optiboot_atmega328pb_16mhz.hex
+iskra-nano-pro.build.f_cpu=16000000L
