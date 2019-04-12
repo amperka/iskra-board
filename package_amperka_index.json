@@ -9,13 +9,13 @@
         {
           "name": "Amperka AVR Boards",
           "architecture": "avr",
-          "version": "0.0.1",
+          "version": "0.0.2",
           "category": "Contributed",
           "help": {
             "online": "https://github.com/amperka/iskra-boards"
           },
-          "url": "https://github.com/amperka/iskra-boards/releases/download/v0.0.1/iskra-0.0.1.zip",
-          "archiveFileName": "iskra-0.0.1.zip",
+          "url": "https://github.com/amperka/iskra-boards/releases/download/v0.0.2/iskra-0.0.2.zip",
+          "archiveFileName": "iskra-0.0.2.zip",
           "checksum": "SHA-256:3c45e0277aa8fe9091cb43b53fa613441039af86fc958fe8166afcc9b2ac7581",
           "size": "53894",
           "boards": [
