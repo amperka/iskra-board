@@ -1,0 +1,154 @@
+# See: https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
+
+menu.pnum=Board part number
+
+menu.xserial=U(S)ART support
+menu.usb=USB support (if available)
+menu.xusb=USB speed (if available)
+
+menu.opt=Optimize
+menu.rtlib=C Runtime Library
+menu.upload_method=Upload method
+
+################################################################################
+# Amperka boards
+
+iskrajs.name=Iskra JS (stm32f405rg)
+slotexpander.name=Slot Expander (stm32f030f4)
+
+iskrajs.build.core=arduino
+iskrajs.build.board=iskrajs
+iskrajs.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
+slotexpander.build.core=arduino
+slotexpander.build.board=slotexpander
+slotexpander.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
+
+# IskraJS board
+iskrajs.build.mcu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+iskrajs.build.board=iskrajs
+iskrajs.build.series=STM32F4xx
+iskrajs.build.product_line=STM32F405xx
+iskrajs.build.variant=iskrajs
+iskrajs.build.cmsis_lib_gcc=arm_cortexM4l_math
+
+iskrajs.menu.upload_method.dfuMethod=Simple DFU
+iskrajs.menu.upload_method.dfuMethod.upload.tool=dfu-util
+iskrajs.menu.upload_method.dfuMethod.upload.protocol=dfuse
+iskrajs.menu.upload_method.dfuMethod.upload.use_1200bps_touch=true
+iskrajs.menu.upload_method.dfuMethod.upload.file_type=bin
+iskrajs.menu.upload_method.dfuMethod.upload.ram.maximum_size=131072
+iskrajs.menu.upload_method.dfuMethod.upload.maximum_data_size=131072
+iskrajs.menu.upload_method.dfuMethod.upload.flash.maximum_size=1048576
+iskrajs.menu.upload_method.dfuMethod.upload.maximum_size=1048576
+iskrajs.menu.upload_method.dfuMethod.upload.mem_start=0x08000000
+iskrajs.menu.upload_method.dfuMethod.upload.usbID=0483:df11
+iskrajs.menu.upload_method.dfuMethod.upload.altID=0
+
+iskrajs.menu.upload_method.stlinkMethod=StLink
+iskrajs.menu.upload_method.stlinkMethod.upload.tool=stlink
+iskrajs.menu.upload_method.stlinkMethod.upload.protocol=stlink
+iskrajs.menu.upload_method.stlinkMethod.upload.ram.maximum_size=131072
+iskrajs.menu.upload_method.stlinkMethod.upload.maximum_data_size=131072
+iskrajs.menu.upload_method.stlinkMethod.upload.flash.maximum_size=1048576
+iskrajs.menu.upload_method.stlinkMethod.upload.maximum_size=1048576
+iskrajs.menu.upload_method.stlinkMethod.upload.mem_start=0x08000000
+
+# Serialx activation
+iskrajs.menu.xserial.generic=Enabled (generic 'Serial')
+iskrajs.menu.xserial.none=Enabled (no generic 'Serial')
+iskrajs.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
+iskrajs.menu.xserial.disabled=Disabled (No Serial support)
+iskrajs.menu.xserial.disabled.build.xSerial=
+
+# USB connectivity
+iskrajs.menu.usb.none=None
+iskrajs.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
+iskrajs.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
+iskrajs.menu.usb.CDC=CDC (no generic 'Serial')
+iskrajs.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
+iskrajs.menu.usb.HID=HID (keyboard and mouse)
+iskrajs.menu.usb.HID.build.enable_usb={build.usb_flags} -DUSBD_USE_HID_COMPOSITE
+iskrajs.menu.xusb.FS=Low/Full Speed
+iskrajs.menu.xusb.HS=High Speed
+iskrajs.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
+iskrajs.menu.xusb.HSFS=High Speed in Full Speed mode
+iskrajs.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
+
+# Optimizations
+iskrajs.menu.opt.osstd=Smallest (-Os default)
+iskrajs.menu.opt.osstd.build.flags.optimize=-Os
+iskrajs.menu.opt.oslto=Smallest (-Os) with LTO
+iskrajs.menu.opt.oslto.build.flags.optimize=-Os -flto
+iskrajs.menu.opt.o1std=Fast (-O1)
+iskrajs.menu.opt.o1std.build.flags.optimize=-O1
+iskrajs.menu.opt.o1lto=Fast (-O1) with LTO
+iskrajs.menu.opt.o1lto.build.flags.optimize=-O1 -flto
+iskrajs.menu.opt.o2std=Faster (-O2)
+iskrajs.menu.opt.o2std.build.flags.optimize=-O2
+iskrajs.menu.opt.o2lto=Faster (-O2) with LTO
+iskrajs.menu.opt.o2lto.build.flags.optimize=-O2 -flto
+iskrajs.menu.opt.o3std=Fastest (-O3)
+iskrajs.menu.opt.o3std.build.flags.optimize=-O3
+iskrajs.menu.opt.o3lto=Fastest (-O3) with LTO
+iskrajs.menu.opt.o3lto.build.flags.optimize=-O3 -flto
+iskrajs.menu.opt.ogstd=Debug (-g)
+iskrajs.menu.opt.ogstd.build.flags.optimize=-g -Og
+
+# C Runtime Library
+iskrajs.menu.rtlib.nano=Newlib Nano (default)
+iskrajs.menu.rtlib.nanofp=Newlib Nano + Float Printf
+iskrajs.menu.rtlib.nanofp.build.flags.ldspecs=--specs=nano.specs -u _printf_float
+iskrajs.menu.rtlib.nanofs=Newlib Nano + Float Scanf
+iskrajs.menu.rtlib.nanofs.build.flags.ldspecs=--specs=nano.specs -u _scanf_float
+iskrajs.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
+iskrajs.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
+iskrajs.menu.rtlib.full=Newlib Standard
+iskrajs.menu.rtlib.full.build.flags.ldspecs=
+
+# Slot Expander board
+slotexpander.build.mcu=cortex-m0 -mfpu=auto -mfloat-abi=soft
+slotexpander.build.board=slotexpander
+slotexpander.build.series=STM32F0xx
+slotexpander.build.product_line=STM32F030x6
+slotexpander.build.variant=slotexpander
+slotexpander.build.cmsis_lib_gcc=arm_cortexM0l_math
+
+slotexpander.menu.upload_method.dfuMethod=StLink
+slotexpander.upload.tool=stlink
+slotexpander.upload.protocol=stlink
+slotexpander.upload.ram.maximum_size=4096
+slotexpander.upload.maximum_data_size=4096
+slotexpander.upload.flash.maximum_size=16384
+slotexpander.upload.maximum_size=16384
+slotexpander.upload.mem_start=0x08000000
+
+# Optimizations
+slotexpander.menu.opt.osstd=Smallest (-Os default)
+slotexpander.menu.opt.osstd.build.flags.optimize=-Os
+slotexpander.menu.opt.oslto=Smallest (-Os) with LTO
+slotexpander.menu.opt.oslto.build.flags.optimize=-Os -flto
+slotexpander.menu.opt.o1std=Fast (-O1)
+slotexpander.menu.opt.o1std.build.flags.optimize=-O1
+slotexpander.menu.opt.o1lto=Fast (-O1) with LTO
+slotexpander.menu.opt.o1lto.build.flags.optimize=-O1 -flto
+slotexpander.menu.opt.o2std=Faster (-O2)
+slotexpander.menu.opt.o2std.build.flags.optimize=-O2
+slotexpander.menu.opt.o2lto=Faster (-O2) with LTO
+slotexpander.menu.opt.o2lto.build.flags.optimize=-O2 -flto
+slotexpander.menu.opt.o3std=Fastest (-O3)
+slotexpander.menu.opt.o3std.build.flags.optimize=-O3
+slotexpander.menu.opt.o3lto=Fastest (-O3) with LTO
+slotexpander.menu.opt.o3lto.build.flags.optimize=-O3 -flto
+slotexpander.menu.opt.ogstd=Debug (-g)
+slotexpander.menu.opt.ogstd.build.flags.optimize=-g -Og
+
+# C Runtime Library
+slotexpander.menu.rtlib.nano=Newlib Nano (default)
+slotexpander.menu.rtlib.nanofp=Newlib Nano + Float Printf
+slotexpander.menu.rtlib.nanofp.build.flags.ldspecs=--specs=nano.specs -u _printf_float
+slotexpander.menu.rtlib.nanofs=Newlib Nano + Float Scanf
+slotexpander.menu.rtlib.nanofs.build.flags.ldspecs=--specs=nano.specs -u _scanf_float
+slotexpander.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
+slotexpander.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
+slotexpander.menu.rtlib.full=Newlib Standard
+slotexpander.menu.rtlib.full.build.flags.ldspecs=
