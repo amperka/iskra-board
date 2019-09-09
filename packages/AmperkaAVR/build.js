@@ -11,6 +11,8 @@ if (process.argv.length <= 2) {
 }
 
 var version = fs.readFileSync('./current.version').toString().split('.');
+
+switch (process.argv[2]) {
   case 'major':
     version[0]++;
     version[1] = 0;
