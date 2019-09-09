@@ -1,0 +1,27 @@
+Ядро Arduino для плат производства Amperka
+
+Для использования добавьте в Файл/Настройки/Дополнительные ссылки для менеджера плат в Arduino строку:
+https://github.com/amperka/amperka-boards/package_amperka_index.json
+Войдите в Менеджер плат и установите последние версии пакетов AmperkaAVR и / или AmperkaARM
+
+На данный момент поддерживаются для целевых систем Linux64, Apple64 (без загрузки) и Windows32:
+
+Пакет AmperkaAVR:
+Iskra nano Pro - ядро AVR, процессор atmega328-PB (загрузка avrdude)
+
+Пакет AmperkaARM:
+Iskra JS -ядро ARM Cortex M4, процессор stm32f405rgt6 (загрузка DFU или STLink)
+Slot Expander - ядро ARM Cortex M0, процессор stm32f030f4p6 (загрузка STLink)
+
+Для коррекции войдите в соответствующий каталог и следуйте инструкциям из файла read.me.please:
+
+AVR CORE - ./packages/AmperkaAVR/
+AVR TOOLS:
+- используются штатные средства Arduino, ничего дополнительно не требуется
+
+ARM CORE - ./packages/AmperkaARM/
+ARM TOOLS:
+- arm-none-eabi-gcc	- ./packages/AmperkaARM/tools/arm-none-eabi-gcc
+- CMSIS			- ./packages/AmperkaARM/tools/CMSIS
+- addon-lib		- ./packages/AmperkaARM/tools/addon-lib
+- uploader		- ./packages/AmperkaARM/tools/uploader
