@@ -1,0 +1,15 @@
+{
+  "author": "Yury Botov",
+  "name": "amperka-boards",
+  "version": "0.1.3",
+  "description": "Arduino cores for Amperka boards",
+  "license": "GPL-3.0",
+  "repository": "local",
+  "devDependencies": {
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1",
+    "https": "^1.0.0",
+    "json-beautify": "^1.1.0",
+    "sha256-file": "^1.0.0"
+  }
+}
