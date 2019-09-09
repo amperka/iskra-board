@@ -1,0 +1,502 @@
+The system is: Linux - 4.15.0-58-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/3.10.2/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b6d24/fast"
+make[1]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_b6d24.dir/build.make CMakeFiles/cmTC_b6d24.dir/build
+make[2]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b6d24.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b6d24.dir/testCCompiler.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b6d24
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6d24.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b6d24.dir/testCCompiler.c.o  -o cmTC_b6d24 
+make[2]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_912f4/fast"
+make[1]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_912f4.dir/build.make CMakeFiles/cmTC_912f4.dir/build
+make[2]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_912f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_912f4.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o  -o cmTC_912f4 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_912f4' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8g5whd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_912f4 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_912f4' '-mtune=generic' '-march=x86-64'
+make[2]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_912f4/fast"]
+  ignore line: [make[1]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_912f4.dir/build.make CMakeFiles/cmTC_912f4.dir/build]
+  ignore line: [make[2]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»]
+  ignore line: [Building C object CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_912f4]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_912f4.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o  -o cmTC_912f4 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_912f4' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8g5whd.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_912f4 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc8g5whd.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_912f4] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
+    arg [CMakeFiles/cmTC_912f4.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e1b55/fast"
+make[1]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_e1b55.dir/build.make CMakeFiles/cmTC_e1b55.dir/build
+make[2]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e1b55.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_e1b55.dir/feature_tests.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e1b55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1b55.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e1b55.dir/feature_tests.c.o  -o cmTC_e1b55 
+make[2]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d3d68/fast"
+make[1]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_d3d68.dir/build.make CMakeFiles/cmTC_d3d68.dir/build
+make[2]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d3d68.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_d3d68.dir/feature_tests.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_d3d68
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3d68.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d3d68.dir/feature_tests.c.o  -o cmTC_d3d68 
+make[2]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_233c2/fast"
+make[1]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_233c2.dir/build.make CMakeFiles/cmTC_233c2.dir/build
+make[2]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_233c2.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_233c2.dir/feature_tests.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_233c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_233c2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_233c2.dir/feature_tests.c.o  -o cmTC_233c2 
+make[2]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Performing C SOURCE FILE Test C_SUPPORTS_STD_GNU99 succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e54a0/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_e54a0.dir/build.make CMakeFiles/cmTC_e54a0.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e54a0.dir/src.c.o
+/usr/bin/cc   -DC_SUPPORTS_STD_GNU99   -std=gnu99 -o CMakeFiles/cmTC_e54a0.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e54a0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e54a0.dir/link.txt --verbose=1
+/usr/bin/cc  -DC_SUPPORTS_STD_GNU99    -rdynamic CMakeFiles/cmTC_e54a0.dir/src.c.o  -o cmTC_e54a0 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WALL succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_710d8/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_710d8.dir/build.make CMakeFiles/cmTC_710d8.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_710d8.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -DC_SUPPORTS_WALL   -Wall -o CMakeFiles/cmTC_710d8.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_710d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_710d8.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -DC_SUPPORTS_WALL    -rdynamic CMakeFiles/cmTC_710d8.dir/src.c.o  -o cmTC_710d8 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WEXTRA succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d55f6/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_d55f6.dir/build.make CMakeFiles/cmTC_d55f6.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d55f6.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -DC_SUPPORTS_WEXTRA   -Wextra -o CMakeFiles/cmTC_d55f6.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d55f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d55f6.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -DC_SUPPORTS_WEXTRA    -rdynamic CMakeFiles/cmTC_d55f6.dir/src.c.o  -o cmTC_d55f6 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WSHADOW succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3bac6/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_3bac6.dir/build.make CMakeFiles/cmTC_3bac6.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3bac6.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -DC_SUPPORTS_WSHADOW   -Wshadow -o CMakeFiles/cmTC_3bac6.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3bac6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bac6.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -DC_SUPPORTS_WSHADOW    -rdynamic CMakeFiles/cmTC_3bac6.dir/src.c.o  -o cmTC_3bac6 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_D_FORTIFY_SOURCE_2 succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bb322/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_bb322.dir/build.make CMakeFiles/cmTC_bb322.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb322.dir/src.c.o
+/usr/bin/cc -D_FORTIFY_SOURCE=2  -std=gnu99 -Wall -Wextra -Wshadow -DC_SUPPORTS_D_FORTIFY_SOURCE_2   -o CMakeFiles/cmTC_bb322.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bb322
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb322.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -DC_SUPPORTS_D_FORTIFY_SOURCE_2    -rdynamic CMakeFiles/cmTC_bb322.dir/src.c.o  -o cmTC_bb322 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FSTRICT_ALIASING succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_81b0e/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_81b0e.dir/build.make CMakeFiles/cmTC_81b0e.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81b0e.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -DC_SUPPORTS_FSTRICT_ALIASING   -fstrict-aliasing -o CMakeFiles/cmTC_81b0e.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_81b0e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81b0e.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -DC_SUPPORTS_FSTRICT_ALIASING    -rdynamic CMakeFiles/cmTC_81b0e.dir/src.c.o  -o cmTC_81b0e 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WUNDEF succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_065f2/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_065f2.dir/build.make CMakeFiles/cmTC_065f2.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_065f2.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -DC_SUPPORTS_WUNDEF   -Wundef -o CMakeFiles/cmTC_065f2.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_065f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_065f2.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -DC_SUPPORTS_WUNDEF    -rdynamic CMakeFiles/cmTC_065f2.dir/src.c.o  -o cmTC_065f2 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WFORMAT succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a5389/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a5389.dir/build.make CMakeFiles/cmTC_a5389.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a5389.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -DC_SUPPORTS_WFORMAT   -Wformat -o CMakeFiles/cmTC_a5389.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a5389
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5389.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -DC_SUPPORTS_WFORMAT    -rdynamic CMakeFiles/cmTC_a5389.dir/src.c.o  -o cmTC_a5389 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WFORMAT_SECURITY succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd8e6/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_bd8e6.dir/build.make CMakeFiles/cmTC_bd8e6.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bd8e6.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -DC_SUPPORTS_WFORMAT_SECURITY   -Wformat-security -o CMakeFiles/cmTC_bd8e6.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_bd8e6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd8e6.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -DC_SUPPORTS_WFORMAT_SECURITY    -rdynamic CMakeFiles/cmTC_bd8e6.dir/src.c.o  -o cmTC_bd8e6 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WMAYBE_UNINITIALIZED succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ea541/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ea541.dir/build.make CMakeFiles/cmTC_ea541.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea541.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -DC_SUPPORTS_WMAYBE_UNINITIALIZED   -Wmaybe-uninitialized -o CMakeFiles/cmTC_ea541.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ea541
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea541.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -DC_SUPPORTS_WMAYBE_UNINITIALIZED    -rdynamic CMakeFiles/cmTC_ea541.dir/src.c.o  -o cmTC_ea541 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WIMPLICIT_FUNCTION_DECLARATION succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5ed4f/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_5ed4f.dir/build.make CMakeFiles/cmTC_5ed4f.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ed4f.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -DC_SUPPORTS_WIMPLICIT_FUNCTION_DECLARATION   -Wimplicit-function-declaration -o CMakeFiles/cmTC_5ed4f.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5ed4f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ed4f.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -DC_SUPPORTS_WIMPLICIT_FUNCTION_DECLARATION    -rdynamic CMakeFiles/cmTC_5ed4f.dir/src.c.o  -o cmTC_5ed4f 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WREDUNDANT_DECLS succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c53d3/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_c53d3.dir/build.make CMakeFiles/cmTC_c53d3.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c53d3.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -DC_SUPPORTS_WREDUNDANT_DECLS   -Wredundant-decls -o CMakeFiles/cmTC_c53d3.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c53d3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c53d3.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -DC_SUPPORTS_WREDUNDANT_DECLS    -rdynamic CMakeFiles/cmTC_c53d3.dir/src.c.o  -o cmTC_c53d3 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FPIC succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_453bb/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_453bb.dir/build.make CMakeFiles/cmTC_453bb.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_453bb.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -DC_SUPPORTS_FPIC   -fPIC -o CMakeFiles/cmTC_453bb.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_453bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_453bb.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -DC_SUPPORTS_FPIC    -rdynamic CMakeFiles/cmTC_453bb.dir/src.c.o  -o cmTC_453bb 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_GGDB succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1180b/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_1180b.dir/build.make CMakeFiles/cmTC_1180b.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1180b.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -DC_SUPPORTS_GGDB   -ggdb -o CMakeFiles/cmTC_1180b.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1180b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1180b.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -DC_SUPPORTS_GGDB    -rdynamic CMakeFiles/cmTC_1180b.dir/src.c.o  -o cmTC_1180b 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_O0 succeeded with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0b3ab/fast"
+make[1]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0b3ab.dir/build.make CMakeFiles/cmTC_0b3ab.dir/build
+make[2]: Entering directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b3ab.dir/src.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -ggdb -DC_SUPPORTS_O0   -O0 -o CMakeFiles/cmTC_0b3ab.dir/src.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0b3ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b3ab.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -ggdb -DC_SUPPORTS_O0    -rdynamic CMakeFiles/cmTC_0b3ab.dir/src.c.o  -o cmTC_0b3ab 
+make[2]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_35892/fast"
+make[1]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_35892.dir/build.make CMakeFiles/cmTC_35892.dir/build
+make[2]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_35892.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -ggdb -O0    -o CMakeFiles/cmTC_35892.dir/CheckIncludeFile.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_35892
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35892.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -ggdb -O0     -rdynamic CMakeFiles/cmTC_35892.dir/CheckIncludeFile.c.o  -o cmTC_35892 
+make[2]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f3b78/fast"
+make[1]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_f3b78.dir/build.make CMakeFiles/cmTC_f3b78.dir/build
+make[2]: вход в каталог «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_f3b78.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -ggdb -O0    -o CMakeFiles/cmTC_f3b78.dir/CheckIncludeFile.c.o   -c /home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f3b78
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3b78.dir/link.txt --verbose=1
+/usr/bin/cc  -std=gnu99 -Wall -Wextra -Wshadow -D_FORTIFY_SOURCE=2 -fstrict-aliasing -Wundef -Wformat -Wformat-security -Wmaybe-uninitialized -Wimplicit-function-declaration -Wredundant-decls -fPIC -ggdb -O0     -rdynamic CMakeFiles/cmTC_f3b78.dir/CheckIncludeFile.c.o  -o cmTC_f3b78 
+make[2]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/yury/Документы/from_github/stlink/build/Debug/CMakeFiles/CMakeTmp»
+
+
