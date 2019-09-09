@@ -1,0 +1,8 @@
+[
+    {
+        "method": "repac-from-github-lfs",
+        "remote-url": "https://github.com/ARM-software/CMSIS_5",
+        "storage-name": "CMSIS-5.6.0.tar.bz2",
+        "target": "all"
+    }
+]
