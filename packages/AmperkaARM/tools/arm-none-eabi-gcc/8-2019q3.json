@@ -1,0 +1,20 @@
+[
+  {
+      "method": "rename-from-github-releases",
+      "remote-url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2",
+      "storage-name": "arm-none-eabi-gcc-8-2019q3.tar.bz2",
+      "target": "l64"
+  },
+  {
+      "method": "rename-from-github-releases",
+      "remote-url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-mac.tar.bz2",
+      "storage-name": "arm-none-eabi-gcc-8-2019q3.tar.bz2",
+      "target": "a64"
+  },
+  {
+      "method": "rename-from-github-releases",
+      "remote-url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-win32.zip",
+      "storage-name": "arm-none-eabi-gcc-8-2019q3.zip",
+      "target": "w32"
+  }
+]

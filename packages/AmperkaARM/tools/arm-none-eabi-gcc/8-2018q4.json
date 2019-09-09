@@ -1,0 +1,20 @@
+[
+  {
+      "method": "rename-from-github-releases",
+      "remote-url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2018q4/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
+      "storage-name": "arm-none-eabi-gcc-8-2018q4.tar.bz2",
+      "target": "l64"
+  },
+  {
+      "method": "rename-from-github-releases",
+      "remote-url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2018q4/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+      "storage-name": "arm-none-eabi-gcc-8-2018q4.tar.bz2",
+      "target": "a64"
+  },
+  {
+      "method": "rename-from-github-releases",
+      "remote-url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2018q4/gcc-arm-none-eabi-8-2018-q4-major-win32.zip",
+      "storage-name": "arm-none-eabi-gcc-8-2018q4.zip",
+      "target": "w32"
+  }
+]
