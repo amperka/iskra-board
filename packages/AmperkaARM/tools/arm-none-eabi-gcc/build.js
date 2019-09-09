@@ -1,6 +1,6 @@
 /* !!!! должен быть установлен github lfs: https://git-lfs.github.com/  !!!!! */
 
-const releasesPath = '/home/yury/projects/amperka-boards/releases';
+const releasesPath = '~/releases';
 
 const https = require('https');
 const fs = require('fs');
