@@ -1,4 +1,4 @@
-const releasesPath = '/home/yury/projects/amperka-boards/releases';
+const releasesPath = '~/releases';
 
 const fs = require('fs');
 const child_process = require('child_process');
