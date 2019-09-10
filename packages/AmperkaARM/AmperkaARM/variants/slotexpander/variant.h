@@ -1,14 +1,11 @@
 /*
- *******************************************************************************
- * Copyright (c) 2019, STMicroelectronics
- * All rights reserved.
+ * This file is a part of Amperka-boards cores.
  *
- * This software component is licensed by ST under BSD 3-Clause license,
- * the "License"; You may not use this file except in compliance with the
- * License. You may obtain a copy of the License at:
- *                        opensource.org/licenses/BSD-3-Clause
- *
- *******************************************************************************
+ * Defines: Slot Expander board definitions.
+ * © Amperka LLC (https://amperka.com, dev@amperka.com)
+ * 
+ * Author: Yury Botov <by@amperka.ru>
+ * License: GPLv3, all text here must be included in any redistribution.
  */
 
 #ifndef _VARIANT_ARDUINO_STM32_
@@ -22,28 +19,6 @@ extern "C" {
  *        Pins
  *----------------------------------------------------------------------------*/
 
-// Define pin names to match digital pin number --> Dx
-// It could be used with preprocessor tests (e.g. #if PXn == 3)
-// so an enum will not work.
-// !!!
-// !!! Copy the digitalPin[] array from the variant.cpp
-// !!! and remove all '_': PX_n --> PXn
-// !!! For NC, comment the line to warn x pin number is NC
-// !!! // x is NC
-// !!! For duplicated pin name, comment the line to warn x pin number
-// !!! is PXn which is already defined with y pin number
-// !!! // x is PXn (y)
-// !!! Ex:
-// !!! ...
-// !!! #define PA4  20 // A14
-// !!! #define PB4  21
-// !!! #define PB5  22
-// !!! #define PB3  23
-// !!! // 24 is PA4 (20)
-// !!! // 25 is PB4 (21)
-// !!! #define PA2  26 // A15
-// !!! ...
-//#define PXn x
 #define PB1 0
 #define PA7 1
 #define PA6 2
@@ -58,83 +33,37 @@ extern "C" {
 #define PA9 11
 #define PA10 12
 
-// This must be a literal
-// It is used with preprocessor tests (e.g. #if NUM_DIGITAL_PINS > 3)
-// so an enum will not work.
-#define NUM_DIGITAL_PINS        21
-
-// Allow to define Arduino style alias for analog input pin number --> Ax
-// All pins are digital, analog inputs are a subset of digital pins
-// and must be contiguous to be able to loop on each value
-// This must be a literal with a value less than or equal to MAX_ANALOG_INPUTS
-// defined in pin_arduino.h
-// It is used with preprocessor tests (e.g. #if NUM_ANALOG_INPUTS > 3)
-// so an enum will not work.
-// !!!
-// !!! It must be aligned with the number of analog PinName
-// !!! defined in digitalPin[] array in variant.cpp
-// !!!
-#define NUM_ANALOG_INPUTS       8
-// Define digital pin number of the first analog input  (i.e. which digital pin is A0)
-// First analog pin value (A0) must be greater than or equal to NUM_ANALOG_INPUTS
-#define NUM_ANALOG_FIRST        14
-
-// Below ADC, DAC and PWM definitions already done in the core
-// Could be redefined here if needed
-// ADC resolution is 12bits
-//#define ADC_RESOLUTION          12
-//#define DACC_RESOLUTION         12
-
-// PWM resolution
-//#define PWM_RESOLUTION          8
-//#define PWM_FREQUENCY           1000
-//#define PWM_MAX_DUTY_CYCLE      255
+#define NUM_DIGITAL_PINS 21
+#define NUM_ANALOG_INPUTS 8
+#define NUM_ANALOG_FIRST 14
 
 // On-board LED pin number
-#define LED_BUILTIN             PF1
-#define LED_GREEN               LED_BUILTIN
+#define LED_BUILTIN PF1
+#define LED_GREEN LED_BUILTIN
 
 // On-board user button
-#define USER_BTN                PF0
+#define USER_BTN PF0
 
 // SPI Definitions
-#define PIN_SPI_SS              PB1
-#define PIN_SPI_MOSI            PA7
-#define PIN_SPI_MISO            PA6
-#define PIN_SPI_SCK             PA5
+#define PIN_SPI_SS PB1
+#define PIN_SPI_MOSI PA7
+#define PIN_SPI_MISO PA6
+#define PIN_SPI_SCK PA5
 
 // I2C Definitions
-#define PIN_WIRE_SDA            PA10 // Default for Arduino connector compatibility
-#define PIN_WIRE_SCL            PA9  // Default for Arduino connector compatibility
+#define PIN_WIRE_SDA PA10
+#define PIN_WIRE_SCL PA9
 
 // Timer Definitions
-// Do not use timer used by PWM pins when possible. See PinMap_PWM.
-#define TIMER_TONE              TIM17
+#define TIMER_TONE TIM17
 
-// Do not use basic timer: OC is required
-#define TIMER_SERVO             TIM16  //TODO: advanced-control timers don't work
+#define TIMER_SERVO TIM16
 
 // UART Definitions
-#define SERIAL_UART_INSTANCE    1
-// Default pin used for 'Serial' instance
-// Mandatory for Firmata
-#define PIN_SERIAL_RX           PA3
-#define PIN_SERIAL_TX           PA2
+#define SERIAL_UART_INSTANCE 1
 
-// Optional PIN_SERIALn_RX and PIN_SERIALn_TX where 'n' is the U(S)ART number
-// Used when user instanciate a hardware Serial using its peripheral name.
-// Example: HardwareSerial mySerial(USART3);
-// will use PIN_SERIAL3_RX and PIN_SERIAL3_TX if defined.
-//#define PIN_SERIALn_RX          x // For U(S)ARTn RX
-//#define PIN_SERIALn_TX          x // For U(S)ARTn TX
-//#define PIN_SERIALLP1_RX        x // For LPUART1 RX
-//#define PIN_SERIALLP1_TX        x // For LPUART1 TX
-
-// SD card slot Definitions
-// SD detect signal can be defined if required
-//#define SD_DETECT_PIN           x
-// SD Read/Write timeout, default value defined in STM32SD library
-//#define SD_DATATIMEOUT          x
+#define PIN_SERIAL_RX PA3
+#define PIN_SERIAL_TX PA2
 
 #ifdef __cplusplus
 } // extern "C"
@@ -144,10 +73,6 @@ extern "C" {
  *----------------------------------------------------------------------------*/
 
 #ifdef __cplusplus
-// These serial port names are intended to allow libraries and architecture-neutral
-// sketches to automatically default to the correct port name for a particular type
-// of use.  For example, a GPS module would normally connect to SERIAL_PORT_HARDWARE_OPEN,
-// the first hardware serial port whose RX/TX pins are not dedicated to another use.
 //
 // SERIAL_PORT_MONITOR        Port which normally prints to the Arduino Serial Monitor
 //
@@ -159,8 +84,8 @@ extern "C" {
 //
 // SERIAL_PORT_HARDWARE_OPEN  Hardware serial ports which are open for use.  Their RX & TX
 //                            pins are NOT connected to anything by default.
-#define SERIAL_PORT_MONITOR     Serial
-#define SERIAL_PORT_HARDWARE    Serial
+#define SERIAL_PORT_MONITOR Serial
+#define SERIAL_PORT_HARDWARE Serial
 #endif
 
 #endif /* _VARIANT_ARDUINO_STM32_ */
