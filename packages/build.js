@@ -1,6 +1,5 @@
-const rootPath = '/home/yury/projects/amperka-boards';
-const claudReleasesPath =
-    'https://storage.googleapis.com/amperka-boards/releases';
+const claudReleasesPath = 'https://storage.googleapis.com/amperka-boards/releases';
+const localReleasesPath = '~/releases';
 
 const https = require('https');
 const fs = require('fs');
@@ -65,7 +64,7 @@ var allLoaded = function() {
   config.packages.push(amperkaArm);
 
   fs.writeFileSync(
-      rootPath + '/package_amperka_index.json', beautify(config, null, 2, 80));
+      '../package_amperka_index.json', beautify(config, null, 2, 80));
 }
 
 flag.init(allLoaded);
