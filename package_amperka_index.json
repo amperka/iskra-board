@@ -8,8 +8,8 @@
       "platforms": [
         {
           "name": "Amperka-AVR",
-          "version": "0.1.3",
-          "boards": [ { "name": "Iskra Nano Pro" } ],
+          "version": "0.0.1",
+          "boards": [ { "name": "Amperka Iskra Nano PB" } ],
           "toolsDependencies": [
             {
               "packager": "arduino",
@@ -23,36 +23,12 @@
             }
           ],
           "architecture": "avr",
-          "archiveFileName": "/Amperka-AVR-0.1.3.tar.bz2",
-          "url": "https://storage.googleapis.com/amperka-boards/releases/all/Amperka-AVR-0.1.3.tar.bz2",
+          "archiveFileName": "/Amperka-AVR-0.0.1.tar.bz2",
+          "url": "https://storage.googleapis.com/amperka-boards/releases/all/Amperka-AVR-0.0.1.tar.bz2",
           "category": "Contributed",
           "help": { "online": "https://github.com/amperka/amperka-boards" },
-          "size": "28423",
-          "checksum": "SHA-256:96ff0b87ff5ce1f3b5dc4b2263cad22ca03415d513a89bcc03bbb92008a473b9"
-        },
-        {
-          "name": "Amperka-AVR",
-          "version": "0.1.2",
-          "boards": [ { "name": "Iskra Nano Pro" } ],
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "avr-gcc",
-              "version": "5.4.0-atmel3.6.1-arduino2"
-            },
-            {
-              "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.3.0-arduino14"
-            }
-          ],
-          "architecture": "avr",
-          "archiveFileName": "/Amperka-AVR-0.1.2.tar.bz2",
-          "url": "https://storage.googleapis.com/amperka-boards/releases/all/Amperka-AVR-0.1.2.tar.bz2",
-          "category": "Contributed",
-          "help": { "online": "https://github.com/amperka/amperka-boards" },
-          "size": "29993",
-          "checksum": "SHA-256:2c124ba9ee8c191c496633139d7b53907be7b49357939bf3b855faa7f1509261"
+          "size": "29625",
+          "checksum": "SHA-256:4865c731aa148f2efe0062e2204105c443acb595efe1cdf514f06af22aa5e872"
         },
         {
           "name": "Amperka-AVR",
@@ -80,6 +56,54 @@
         },
         {
           "name": "Amperka-AVR",
+          "version": "0.1.2",
+          "boards": [ { "name": "Iskra Nano Pro" } ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "5.4.0-atmel3.6.1-arduino2"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino14"
+            }
+          ],
+          "architecture": "avr",
+          "archiveFileName": "/Amperka-AVR-0.1.2.tar.bz2",
+          "url": "https://storage.googleapis.com/amperka-boards/releases/all/Amperka-AVR-0.1.2.tar.bz2",
+          "category": "Contributed",
+          "help": { "online": "https://github.com/amperka/amperka-boards" },
+          "size": "29993",
+          "checksum": "SHA-256:2c124ba9ee8c191c496633139d7b53907be7b49357939bf3b855faa7f1509261"
+        },
+        {
+          "name": "Amperka-AVR",
+          "version": "0.1.3",
+          "boards": [ { "name": "Iskra Nano Pro" } ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "5.4.0-atmel3.6.1-arduino2"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.3.0-arduino14"
+            }
+          ],
+          "architecture": "avr",
+          "archiveFileName": "/Amperka-AVR-0.1.3.tar.bz2",
+          "url": "https://storage.googleapis.com/amperka-boards/releases/all/Amperka-AVR-0.1.3.tar.bz2",
+          "category": "Contributed",
+          "help": { "online": "https://github.com/amperka/amperka-boards" },
+          "size": "28423",
+          "checksum": "SHA-256:96ff0b87ff5ce1f3b5dc4b2263cad22ca03415d513a89bcc03bbb92008a473b9"
+        },
+        {
+          "name": "Amperka-AVR",
           "version": "0.1.1",
           "boards": [ { "name": "Amperka Iskra Nano Pro" } ],
           "toolsDependencies": [
@@ -101,30 +125,6 @@
           "help": { "online": "https://github.com/amperka/amperka-boards" },
           "size": "29389",
           "checksum": "SHA-256:4ee6c9752f9286985ecebaca7f6ce26380097a7f14adf9e18fa3c60aaef90bc6"
-        },
-        {
-          "name": "Amperka-AVR",
-          "version": "0.0.1",
-          "boards": [ { "name": "Amperka Iskra Nano PB" } ],
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "avr-gcc",
-              "version": "5.4.0-atmel3.6.1-arduino2"
-            },
-            {
-              "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.3.0-arduino14"
-            }
-          ],
-          "architecture": "avr",
-          "archiveFileName": "/Amperka-AVR-0.0.1.tar.bz2",
-          "url": "https://storage.googleapis.com/amperka-boards/releases/all/Amperka-AVR-0.0.1.tar.bz2",
-          "category": "Contributed",
-          "help": { "online": "https://github.com/amperka/amperka-boards" },
-          "size": "29625",
-          "checksum": "SHA-256:4865c731aa148f2efe0062e2204105c443acb595efe1cdf514f06af22aa5e872"
         }
       ],
       "tools": []
@@ -165,8 +165,8 @@
           "url": "https://storage.googleapis.com/amperka-boards/releases/all/Amperka-ARM-0.1.1.tar.bz2",
           "category": "Contributed",
           "help": { "online": "https://github.com/amperka/amperka-boards" },
-          "size": "23623759",
-          "checksum": "SHA-256:f6f38773f9967eed4cabdba7e081a520c54de5feb692204b4f94a86710e594c1"
+          "size": "23618775",
+          "checksum": "SHA-256:50ae4e9aa9f563299efc406560c759e01110eb74cb33b272e17868425bda942f"
         }
       ],
       "tools": [
@@ -190,10 +190,10 @@
             },
             {
               "host": "i686-mingw32",
-              "url": "https://storage.googleapis.com/amperka-boards/releases/w32/arm-none-eabi-gcc-8-2019q3.zip",
-              "archiveFileName": "/arm-none-eabi-gcc-8-2019q3.zip",
-              "size": "137020992",
-              "checksum": "SHA-256:94913fe2414b424d81cd53fbf906f1865444c634260b7544b6098eb2a74dae1c"
+              "url": "https://storage.googleapis.com/amperka-boards/releases/w32/arm-none-eabi-gcc-8-2019q3.tar.bz2",
+              "archiveFileName": "/arm-none-eabi-gcc-8-2019q3.tar.bz2",
+              "size": "115981624",
+              "checksum": "SHA-256:38d36b9bf86062b2b4201256b68310190f378370ca0e2466cce7be7516328102"
             }
           ]
         },

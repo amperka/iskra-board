@@ -5,7 +5,7 @@
         "systems": [
             { "host": "x86_64-pc-linux-gnu", "url": ["l64",".tar.bz2"] },
             { "host": "x86_64-apple-darwin", "url": ["a64",".tar.bz2"] },
-            { "host": "i686-mingw32", "url": ["w32",".zip"] }
+            { "host": "i686-mingw32", "url": ["w32",".tar.bz2"] }
         ]
     },
     {
