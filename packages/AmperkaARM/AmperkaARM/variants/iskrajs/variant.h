@@ -54,9 +54,9 @@ extern "C" {
 #define PA4 27
 #define PA5 28
 
-#define NUM_DIGITAL_PINS 42
+#define NUM_DIGITAL_PINS 41
 #define NUM_ANALOG_INPUTS 12
-#define NUM_ANALOG_FIRST 30
+#define NUM_ANALOG_FIRST 29
 
 // On-board LED pin number
 #define LED_BUILTIN PB6
