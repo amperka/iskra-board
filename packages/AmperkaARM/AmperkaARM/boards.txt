@@ -30,6 +30,7 @@ iskrajs.build.series=STM32F4xx
 iskrajs.build.product_line=STM32F405xx
 iskrajs.build.variant=iskrajs
 iskrajs.build.cmsis_lib_gcc=arm_cortexM4l_math
+iskrajs.build.vid=0x0483
 
 iskrajs.menu.upload_method.dfuMethod=Simple DFU
 iskrajs.menu.upload_method.dfuMethod.upload.tool=dfu-util
