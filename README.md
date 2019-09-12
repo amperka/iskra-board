@@ -12,3 +12,5 @@ AVR based:
 ARM based:
 - Iskra JS
 - Slot Expander
+
+(If uses Windows, and DFU upload - use "Zadig" for update drivers for STN32 UPLOADER to WinUSB)
