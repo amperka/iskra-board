@@ -156,8 +156,8 @@ tools.dfu-util.upload.pattern="{path}/{cmd}" -d "{upload.usbID}" -a "{upload.alt
 
 tools.stlink.path={runtime.tools.uploader.path}/bin
 tools.stlink.cmd=st-flash
-tools.stlink.cmd.windows=stlink.exe
+tools.stlink.cmd.windows=ST-LINK_CLI.exe
 tools.stlink.upload.params.verbose=-v
 tools.stlink.upload.params.quiet=
 tools.stlink.upload.pattern="{path}/{cmd}" --reset --format binary write "{build.path}/{build.project_name}.bin" "{upload.mem_start}"
-
+tools.stlink.upload.pattern.windows="{path}/{cmd}" -c SWD -P "{build.path}/{build.project_name}.bin" "{upload.mem_start}" -V -Rst
